@@ -1,0 +1,10 @@
+/* Scoped stylesheet for FigmaFrame1 component
+   We cannot import CSS files from outside src with CRA unless using a relative path inside src.
+   This file proxies to the original stylesheet so styles remain single-sourced.
+*/
+@import url("../../../assets/figma/frame-1/style.css");
+
+/* Scope wrapper to reduce leakage; ensure component wraps markup in .figma-frame1-root */
+.figma-frame1-root {
+  /* component-level overrides can go here if needed */
+}
